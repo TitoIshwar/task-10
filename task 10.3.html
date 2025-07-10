@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Meal Time Adviser</title></head>
+<body>
+
+  <button onclick="
+    var hour = 14;  
+    var msg = '';
+
+    if (hour == 7 || hour == 8 || hour == 9) {
+      msg = 'It\'s breakfast time!';
+    } else if (hour == 12 || hour == 13 || hour == 14) {
+      msg = 'It\'s lunch time!';
+    } else if (hour == 16 || hour == 17 || hour == 18) {
+      msg = 'Time for snacks!';
+    } else if (hour == 19 || hour == 20 || hour == 21) {
+      msg = 'Dinner time!';
+    } else {
+      msg = 'error';
+    }
+
+    alert('Time entered: ' + hour + '\n' + msg);
+  ">Check Meal Time</button>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Grade to Remark (Switch)</title></head>
+<body>
+
+  <button onclick="
+    var g = 'B';  
+    var remark = '';
+
+    switch (g) {
+      case 'A':
+        remark = 'Excellent!';
+        break;
+      case 'B':
+        remark = 'Very Good';
+        break;
+      case 'C':
+        remark = 'Good';
+        break;
+      case 'D':
+        remark = 'Needs Improvement';
+        break;
+      default:
+        remark = 'Invalid grade';
+    }
+
+    alert('Remark: ' + remark);
+  ">Convert Grade</button>
+
+</body>
+</html>
